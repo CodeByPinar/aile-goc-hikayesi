@@ -1,0 +1,8 @@
+.DS_Store
+__pycache__/
+node_modules/
+*.pyc
+# family data and outputs never belong in this repo
+*.ged
+!evals/**/*.ged
+soyagaci*.pdf

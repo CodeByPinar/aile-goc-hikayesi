@@ -1,0 +1,253 @@
+{
+ "title": "Selanik'ten Of'a: bir ailenin yüz yılı (örnek)",
+ "lang": "tr",
+ "summary": "Kurgusal bir aile üzerinde becerinin çıktısını gösteren örnek. Kişiler uydurmadır; yerlerle ilgili tarih bilgileri gerçektir ve kaynaklıdır.",
+ "places": {
+  "selanik": {
+   "name": "Selanik",
+   "qid": "Q17151",
+   "names": {
+    "el": "Θεσσαλονίκη",
+    "en": "Thessaloniki",
+    "bg": "Солун"
+   },
+   "raw": [
+    "Selanik"
+   ],
+   "c": [
+    22.9356,
+    40.6403
+   ],
+   "then": "Selanik vilayetinin merkezi, Osmanlı İmparatorluğu (1912'ye kadar)",
+   "now": "Thessaloniki, Yunanistan",
+   "people": [
+    "pFFF",
+    "pFFM"
+   ],
+   "summary": "Yüzyıl başında Osmanlı'nın en hareketli limanlarından biri; Yahudi, Müslüman, Rum ve Bulgar toplulukların birlikte yaşadığı bir kent."
+  },
+  "izmir": {
+   "name": "İzmir",
+   "qid": "Q35997",
+   "names": {
+    "en": "Izmir",
+    "el": "Σμύρνη"
+   },
+   "raw": [
+    "İzmir"
+   ],
+   "c": [
+    27.1384,
+    38.4127
+   ],
+   "then": "Mübadil ailelerin yerleştirildiği şehirlerden biri (1924)",
+   "now": "İzmir, Türkiye",
+   "people": [
+    "pFF",
+    "pFM",
+    "pF"
+   ]
+  },
+  "of": {
+   "name": "Of",
+   "qid": "Q988069",
+   "names": {
+    "en": "Of"
+   },
+   "raw": [
+    "Of"
+   ],
+   "c": [
+    40.2644,
+    40.945
+   ],
+   "then": "Trabzon vilayetine bağlı kaza",
+   "now": "Trabzon'un ilçesi, Türkiye",
+   "people": [
+    "pMF",
+    "pMM",
+    "pM"
+   ]
+  },
+  "kadikoy": {
+   "name": "Kadıköy",
+   "qid": "Q932886",
+   "names": {
+    "en": "Kadıköy"
+   },
+   "raw": [
+    "Kadıköy"
+   ],
+   "c": [
+    29.0367,
+    40.9869
+   ],
+   "then": "İstanbul",
+   "now": "İstanbul'un ilçesi",
+   "people": [
+    "p0"
+   ]
+  }
+ },
+ "claims": [
+  {
+   "id": "c1",
+   "place": "selanik",
+   "when": "1900",
+   "topic": "population",
+   "text": "Yüzyıl başında Selanik'in en kalabalık topluluğu Yahudilerdi; şehirde Müslümanlar, Rumlar ve Bulgarlar da yaşıyordu.",
+   "confidence": "documented",
+   "sources": [
+    "s1"
+   ],
+   "people": [
+    "pFFF"
+   ]
+  },
+  {
+   "id": "c2",
+   "place": "selanik",
+   "when": "1912-11-08",
+   "topic": "war",
+   "text": "Birinci Balkan Savaşı'nda Yunan ordusu 8 Kasım 1912'de Selanik'e girdi; şehir Osmanlı yönetiminden çıktı.",
+   "confidence": "documented",
+   "sources": [
+    "s1"
+   ]
+  },
+  {
+   "id": "c3",
+   "place": "selanik",
+   "when": "1917-08-18",
+   "topic": "disaster",
+   "text": "18 Ağustos 1917'de çıkan büyük yangın şehrin tarihî merkezinin büyük bölümünü yaktı.",
+   "confidence": "documented",
+   "sources": [
+    "s1",
+    "s5"
+   ]
+  },
+  {
+   "id": "c4",
+   "place": "selanik",
+   "when": "1923-01-30",
+   "topic": "migration",
+   "text": "Lozan'da imzalanan sözleşmeyle Yunanistan'daki Müslümanlar ile Türkiye'deki Rumlar zorunlu mübadeleye tabi tutuldu; mübadele bir plana göre yürütüldü.",
+   "confidence": "documented",
+   "sources": [
+    "s2",
+    "s3"
+   ]
+  },
+  {
+   "id": "c5",
+   "place": "izmir",
+   "when": "1924",
+   "topic": "migration",
+   "text": "Ailede anlatılana göre Ali ile Emine 1924'te tek bir sandıkla vapura binip İzmir'e geldi.",
+   "confidence": "tradition",
+   "sources": [
+    "s6"
+   ],
+   "people": [
+    "pFFF",
+    "pFFM"
+   ]
+  },
+  {
+   "id": "c6",
+   "place": "izmir",
+   "when": "1934-06-21",
+   "topic": "law",
+   "text": "21 Haziran 1934 tarihli Soyadı Kanunu ile herkes bir soyadı almak zorunda oldu.",
+   "confidence": "documented",
+   "sources": [
+    "s4"
+   ]
+  }
+ ],
+ "world": [
+  {
+   "date": "1912-11-08",
+   "scope": "region",
+   "text": "Yunan ordusu Selanik'e girdi",
+   "sources": [
+    "s1"
+   ]
+  },
+  {
+   "date": "1917-08-18",
+   "scope": "region",
+   "text": "Selanik'te büyük yangın",
+   "sources": [
+    "s5"
+   ]
+  },
+  {
+   "date": "1923-01-30",
+   "scope": "country",
+   "text": "Lozan'da nüfus mübadelesi sözleşmesi",
+   "sources": [
+    "s2"
+   ]
+  },
+  {
+   "date": "1934-06-21",
+   "scope": "country",
+   "text": "Soyadı Kanunu",
+   "sources": [
+    "s4"
+   ]
+  }
+ ],
+ "sources": {
+  "s1": {
+   "kind": "book",
+   "author": "Mark Mazower",
+   "title": "Salonica, City of Ghosts: Christians, Muslims and Jews 1430-1950",
+   "where": "HarperCollins, London",
+   "year": "2004"
+  },
+  "s2": {
+   "kind": "web",
+   "title": "Population exchange between Greece and Turkey",
+   "where": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Population_exchange_between_Greece_and_Turkey",
+   "accessed": "2026-11-26",
+   "note": "Orientation; the convention was signed at Lausanne on 30 January 1923."
+  },
+  "s3": {
+   "kind": "paper",
+   "author": "Metin Kopar",
+   "title": "Erken Cumhuriyet Döneminde Demografik Restorasyon: Lozan Mübadilleri",
+   "where": "Kilis 7 Aralık Üniversitesi Sosyal Bilimler Dergisi",
+   "year": "2018",
+   "doi": "10.31834/kilissbd.452999",
+   "accessed": "2026-11-26",
+   "note": "Abstract: the exchange was carried out under a plan set by the convention and protocol; uses Republican Archive documents."
+  },
+  "s4": {
+   "kind": "web",
+   "title": "Surname Law (Turkey)",
+   "where": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Surname_Law_(Turkey)",
+   "accessed": "2026-11-26"
+  },
+  "s5": {
+   "kind": "image",
+   "author": "Agence Rol",
+   "title": "Aftermath of the Thessaloniki Fire of 1917",
+   "where": "Wikimedia Commons (public domain)",
+   "year": "1917",
+   "url": "https://commons.wikimedia.org/wiki/File:Aftermath_of_the_Thessaloniki_Fire_of_1917.jpg"
+  },
+  "s6": {
+   "kind": "oral",
+   "title": "Aile anlatısı (örnek)",
+   "where": "familytree.json oral_history"
+  }
+ },
+ "open_questions": [
+  "Hangi vapur? 1924 yolcu listeleri çevrimiçi değil; Lozan Mübadilleri Vakfı'nın yerleşim kayıtları ipucu verebilir."
+ ]
+}

@@ -1,0 +1,189 @@
+{
+ "subject": "p0",
+ "source": {
+  "type": "example (fictional family)",
+  "file": null,
+  "imported": "2026-11-26"
+ },
+ "people": [
+  {
+   "id": "p0",
+   "given": "Deniz",
+   "surname": "Örnek",
+   "sex": "F",
+   "relation": "Kendisi",
+   "birth": {
+    "date": "1992-04-11",
+    "place": "Kadıköy"
+   },
+   "death": null,
+   "living": true,
+   "father": "pF",
+   "mother": "pM"
+  },
+  {
+   "id": "pF",
+   "given": "Murat",
+   "surname": "Örnek",
+   "sex": "M",
+   "relation": "Babası",
+   "birth": {
+    "date": "1960-09-02",
+    "place": "İzmir"
+   },
+   "death": null,
+   "living": true,
+   "father": "pFF",
+   "mother": "pFM"
+  },
+  {
+   "id": "pM",
+   "given": "Ayşe",
+   "surname": "Örnek",
+   "sex": "F",
+   "relation": "Annesi",
+   "birth": {
+    "date": "1964-03-18",
+    "place": "Of"
+   },
+   "death": null,
+   "living": true,
+   "father": "pMF",
+   "mother": "pMM"
+  },
+  {
+   "id": "pFF",
+   "given": "Hasan",
+   "surname": "Örnek",
+   "sex": "M",
+   "relation": "Babasının Babası",
+   "birth": {
+    "date": "1925",
+    "place": "İzmir"
+   },
+   "death": {
+    "date": "1998-01-07"
+   },
+   "living": false,
+   "father": "pFFF",
+   "mother": "pFFM"
+  },
+  {
+   "id": "pFM",
+   "given": "Fatma",
+   "surname": "Örnek",
+   "sex": "F",
+   "relation": "Babasının Annesi",
+   "birth": {
+    "date": "1930",
+    "place": "İzmir"
+   },
+   "death": {
+    "date": "2010-05-30"
+   },
+   "living": false,
+   "father": null,
+   "mother": null
+  },
+  {
+   "id": "pFFF",
+   "given": "Ali",
+   "surname": "Örnek",
+   "sex": "M",
+   "relation": "Babasının Babasının Babası",
+   "birth": {
+    "date": "1895",
+    "place": "Selanik"
+   },
+   "death": {
+    "date": "1961-11-12"
+   },
+   "living": false,
+   "father": null,
+   "mother": null,
+   "registry": {
+    "province": "İzmir",
+    "district": "Karşıyaka",
+    "locality": "Bahariye Mahallesi"
+   }
+  },
+  {
+   "id": "pFFM",
+   "given": "Emine",
+   "surname": "Örnek",
+   "sex": "F",
+   "relation": "Babasının Babasının Annesi",
+   "birth": {
+    "date": "1900",
+    "place": "Selanik"
+   },
+   "death": {
+    "date": "1975-02-03"
+   },
+   "living": false,
+   "father": null,
+   "mother": null,
+   "registry": {
+    "province": "İzmir",
+    "district": "Karşıyaka",
+    "locality": "Bahariye Mahallesi"
+   }
+  },
+  {
+   "id": "pMF",
+   "given": "Mehmet",
+   "surname": "Yılmaz",
+   "sex": "M",
+   "relation": "Annesinin Babası",
+   "birth": {
+    "date": "1935",
+    "place": "Of"
+   },
+   "death": {
+    "date": "2004-08-21"
+   },
+   "living": false,
+   "father": null,
+   "mother": null
+  },
+  {
+   "id": "pMM",
+   "given": "Zehra",
+   "surname": "Yılmaz",
+   "sex": "F",
+   "relation": "Annesinin Annesi",
+   "birth": {
+    "date": "1938",
+    "place": "Of"
+   },
+   "death": {
+    "date": "2015-12-09"
+   },
+   "living": false,
+   "father": null,
+   "mother": null
+  }
+ ],
+ "events": [
+  {
+   "type": "marriage",
+   "people": [
+    "pF",
+    "pM"
+   ],
+   "date": "1988",
+   "place": "İstanbul"
+  }
+ ],
+ "oral_history": [
+  {
+   "about": [
+    "pFFF",
+    "pFFM"
+   ],
+   "text": "1924'te tek bir sandıkla bir vapura binip İzmir'e gelmişler.",
+   "from": "example"
+  }
+ ],
+ "review": []
+}

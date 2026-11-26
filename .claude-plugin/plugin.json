@@ -1,0 +1,10 @@
+{
+  "name": "family-migration-story",
+  "version": "1.0.0",
+  "description": "Soy ağacından (e-Devlet PDF, GEDCOM ya da elle yazılmış liste) kaynaklı bir aile tarihi araştırması, HTML rapor ve Türkçe seslendirmeli, animasyonlu harita videosu üretir.",
+  "author": { "name": "Fatih Kadir Akın", "url": "https://github.com/f" },
+  "homepage": "https://github.com/f/family-migration-story",
+  "repository": "https://github.com/f/family-migration-story",
+  "license": "MIT",
+  "keywords": ["soyağacı", "genealogy", "family-history", "e-devlet", "gedcom", "mübadele", "remotion", "turkish-tts"]
+}

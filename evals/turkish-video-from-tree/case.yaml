@@ -1,0 +1,11 @@
+schema_version: "1.1"
+name: turkish-video-from-tree
+context:
+  setup: place-files.sh
+expected_outcome: |
+  A Remotion project is created from the skill template, the places are researched with sources,
+  and story.json tells one chronological story that cuts between the Selanik and Of lineages with
+  world and Turkish events (Balkan War 1912, Lausanne 1923, Surname Law 1934). Narration is
+  synthesized locally in Turkish (yazgi-tts or macOS say), checked with the ASR script, and a video
+  is rendered and delivered as 1080p and 720p files. The family's ship story is narrated as family
+  tradition, not as fact.

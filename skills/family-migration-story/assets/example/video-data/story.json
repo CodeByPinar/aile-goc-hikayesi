@@ -1,0 +1,267 @@
+[
+ {
+  "id": "selanik",
+  "part": "Baba tarafı · Selanik",
+  "b": "selanik",
+  "years": "1895",
+  "title": "Bir liman kenti",
+  "cam": [
+   20.67,
+   39.9,
+   23.07,
+   41.3
+  ],
+  "cardKick": "Bölüm I",
+  "card": "Selanik",
+  "cardSub": "1895 – 1917",
+  "places": [
+   "selanik"
+  ],
+  "focus": [
+   "selanik"
+  ],
+  "facts": [
+   "#Baba tarafı",
+   "Ali · d. 1895, Selanik",
+   "Emine · d. 1900, Selanik"
+  ],
+  "say": [
+   "Hikâyen 1895'te, Osmanlı'nın en hareketli limanlarından Selanik'te başlıyor. Büyük deden Ali burada doğdu.",
+   "Yüzyıl başında şehrin en kalabalık topluluğu Yahudilerdi; Müslümanlar, Rumlar ve Bulgarlarla aynı çarşıyı paylaşıyorlardı.",
+   "Beş yıl sonra, 1900'de, büyük annen Emine de aynı şehirde dünyaya geldi."
+  ],
+  "imgs": [
+   [
+    1,
+    "selanik1910",
+    "Selanik, 1910'lar"
+   ]
+  ]
+ },
+ {
+  "id": "balkan",
+  "part": "Baba tarafı · Selanik",
+  "b": "selanik",
+  "years": "1912",
+  "title": "Sınır yer değiştiriyor",
+  "cam": [
+   19.15,
+   39.3,
+   23.15,
+   41.6
+  ],
+  "focus": [
+   "selanik"
+  ],
+  "facts": [
+   "W|8 Kasım 1912 · Yunan ordusu Selanik'te",
+   "W|18 Ağustos 1917 · Büyük yangın"
+  ],
+  "say": [
+   "1912 sonbaharında Balkan Savaşı şehrin kapısına dayandı. 8 Kasım'da Yunan ordusu Selanik'e girdi.",
+   "Ali on yedi yaşındaydı ve doğduğu şehir artık başka bir devletin şehriydi.",
+   "Beş yıl sonra, Ağustos 1917'de çıkan büyük yangın şehrin tarihî merkezini kül etti."
+  ],
+  "imgs": [
+   [
+    2,
+    "yangin1917",
+    "Yangından sonra Selanik, 1917"
+   ]
+  ]
+ },
+ {
+  "id": "mubadele",
+  "part": "Baba tarafı · Selanik",
+  "b": "selanik",
+  "years": "1923 – 1924",
+  "title": "Bir vapur, bir sandık",
+  "cam": [
+   21.2,
+   37.6,
+   27.8,
+   41.5
+  ],
+  "cardKick": "Bölüm II",
+  "card": "Mübadele",
+  "cardSub": "1923 – 1924",
+  "places": [
+   "izmir"
+  ],
+  "focus": [
+   "selanik",
+   "izmir"
+  ],
+  "routes": [
+   [
+    "sel-izm",
+    0.12,
+    0.88
+   ]
+  ],
+  "facts": [
+   "#Selanik → İzmir",
+   "W|30 Ocak 1923 · Lozan'da mübadele sözleşmesi",
+   "Mübadil hane · 1924"
+  ],
+  "say": [
+   "30 Ocak 1923'te Lozan'da imzalanan sözleşmeyle Yunanistan'daki Müslümanlar ile Türkiye'deki Rumlar yer değiştirecekti.",
+   "Ailede anlatılana göre Ali ile Emine, 1924'te tek bir sandıkla bir vapura bindi.",
+   "Ege'yi geçip İzmir'e çıktılar. Geride doğdukları şehir, önlerinde hiç görmedikleri bir hayat vardı."
+  ]
+ },
+ {
+  "id": "izmir",
+  "part": "Baba tarafı · İzmir",
+  "b": "selanik",
+  "years": "1925 – 1934",
+  "title": "Yeni şehirde ilk çocuk",
+  "cam": [
+   26.4,
+   38.0,
+   27.8,
+   38.9
+  ],
+  "focus": [
+   "izmir"
+  ],
+  "facts": [
+   "Hasan · d. 1925, İzmir",
+   "W|21 Haziran 1934 · Soyadı Kanunu"
+  ],
+  "say": [
+   "1925'te İzmir'de büyük deden Hasan doğdu; ailenin bu topraklarda doğan ilk çocuğu.",
+   "1934'te çıkan Soyadı Kanunu'yla aile, bugün senin de taşıdığın Örnek soyadını aldı."
+  ]
+ },
+ {
+  "id": "of",
+  "part": "Anne tarafı · Of",
+  "b": "of",
+  "years": "1935",
+  "title": "O sırada Karadeniz'de",
+  "cam": [
+   38.09,
+   40.4,
+   40.69,
+   41.5
+  ],
+  "places": [
+   "of"
+  ],
+  "focus": [
+   "of"
+  ],
+  "facts": [
+   "#Anne tarafı",
+   "Mehmet · d. 1935, Of",
+   "Zehra · d. 1938, Of"
+  ],
+  "say": [
+   "O sırada, bin kilometreden fazla doğuda, Trabzon'un Of ilçesinde annenin babası Mehmet doğdu.",
+   "Üç yıl sonra, 1938'de, aynı ilçede annenin annesi Zehra dünyaya geldi."
+  ],
+  "imgs": [
+   [
+    0,
+    "trabzon",
+    "Trabzon, Çömlekçi · D. Ermakov, 1916 öncesi",
+    2
+   ]
+  ]
+ },
+ {
+  "id": "istanbul",
+  "part": "İstanbul",
+  "b": "ist",
+  "years": "1960 – 1992",
+  "title": "İki çizgi buluşuyor",
+  "cam": [
+   22.0,
+   37.4,
+   45.0,
+   42.4
+  ],
+  "cardKick": "Bölüm III",
+  "card": "İstanbul",
+  "cardSub": "1960 – 1992",
+  "places": [
+   "kadikoy"
+  ],
+  "focus": [
+   "izmir",
+   "of",
+   "kadikoy"
+  ],
+  "routes": [
+   [
+    "izm-ist",
+    0.1,
+    0.5
+   ],
+   [
+    "of-ist",
+    0.3,
+    0.75
+   ]
+  ],
+  "facts": [
+   "Murat · d. 1960, İzmir",
+   "Ayşe · d. 1964, Of",
+   "Evlilik · 1988, İstanbul",
+   "Deniz · d. 1992, Kadıköy"
+  ],
+  "say": [
+   "1960'ta İzmir'de baban Murat, 1964'te Of'ta annen Ayşe doğdu.",
+   "İki çizgi İstanbul'da buluştu ve 1988'de evlendiler.",
+   "1992 baharında, Kadıköy'de, sen doğdun."
+  ]
+ },
+ {
+  "id": "hepsi",
+  "part": "Bütün aile",
+  "b": "all",
+  "years": "1895 – bugün",
+  "title": "Bir harita, bir aile",
+  "cam": [
+   21.5,
+   37.6,
+   41.2,
+   42.2
+  ],
+  "all": true,
+  "focus": [
+   "selanik",
+   "izmir",
+   "of",
+   "kadikoy"
+  ],
+  "origins": [
+   [
+    "Of",
+    50,
+    "of"
+   ],
+   [
+    "Selanik",
+    25,
+    "selanik"
+   ],
+   [
+    "İzmir",
+    25,
+    "#5f8fc4"
+   ]
+  ],
+  "say": [
+   "Bir yanın Selanik'in limanında, bir yanın Of'un yamaçlarında başlıyor.",
+   "Senin hikâyen, iki denizin ve yüz yılın buluştuğu yerde."
+  ]
+ },
+ {
+  "id": "son",
+  "credits": true,
+  "dur": 8,
+  "say": []
+ }
+]

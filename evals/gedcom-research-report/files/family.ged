@@ -1,0 +1,84 @@
+0 HEAD
+1 SOUR MyHeritage
+1 GEDC
+2 VERS 5.5.1
+1 CHAR UTF-8
+0 @I1@ INDI
+1 NAME Elif /Demir/
+2 GIVN Elif
+2 SURN Demir
+1 SEX F
+1 BIRT
+2 DATE 14 MAR 1994
+2 PLAC Bursa, Turkey
+1 FAMC @F1@
+0 @I2@ INDI
+1 NAME Kemal /Demir/
+1 SEX M
+1 BIRT
+2 DATE 1962
+2 PLAC Bursa, Turkey
+1 FAMC @F2@
+1 FAMS @F1@
+0 @I3@ INDI
+1 NAME Sevim /Demir/
+1 SEX F
+1 BIRT
+2 DATE ABT 1966
+2 PLAC Kayseri, Turkey
+1 FAMC @F3@
+1 FAMS @F1@
+0 @I4@ INDI
+1 NAME Rıza /Demir/
+1 SEX M
+1 BIRT
+2 DATE 1928
+2 PLAC Kırcaali, Bulgaria
+1 DEAT
+2 DATE 2001
+2 PLAC Bursa, Turkey
+1 RESI
+2 PLAC Bursa, Turkey
+2 DATE 1951
+1 NOTE Came to Turkey with the 1950-51 emigration from Bulgaria, family says by train via Edirne.
+1 FAMS @F2@
+0 @I5@ INDI
+1 NAME Hatice /Demir/
+1 SEX F
+1 BIRT
+2 DATE 1932
+2 PLAC Kırcaali, Bulgaria
+1 DEAT
+2 DATE 2012
+1 FAMS @F2@
+0 @I6@ INDI
+1 NAME Osman /Kaya/
+1 SEX M
+1 BIRT
+2 DATE 1935
+2 PLAC Talas, Kayseri, Turkey
+1 DEAT
+1 FAMS @F3@
+0 @I7@ INDI
+1 NAME Nuriye /Kaya/
+1 SEX F
+1 BIRT
+2 DATE BET 1938 AND 1940
+2 PLAC Talas, Kayseri, Turkey
+1 FAMS @F3@
+0 @F1@ FAM
+1 HUSB @I2@
+1 WIFE @I3@
+1 CHIL @I1@
+1 MARR
+2 DATE 1990
+2 PLAC Bursa, Turkey
+0 @F2@ FAM
+1 HUSB @I4@
+1 WIFE @I5@
+1 CHIL @I2@
+0 @F3@ FAM
+1 HUSB @I6@
+1 WIFE @I7@
+1 CHIL @I3@
+0 TRLR
