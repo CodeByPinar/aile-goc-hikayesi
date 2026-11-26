@@ -166,7 +166,7 @@ Deniz şunu yazıyor:
 
 ![Örnek rapor: köken dağılımı, kişiler ve yerlerin tarihi](docs/ornek-rapor.jpg)
 
-**Video** (8 sahne, 18 cümle, 2 dakika 15 saniye). [Videonun tamamını sesiyle izleyin (720p, 5,5 MB)](https://github.com/f/family-migration-story/releases/download/v1.0.0/ornek-aile-720p.mp4).
+**Video** (8 sahne, 18 cümle, 2 dakika 15 saniye). [Videonun tamamını sesiyle izleyin (720p, 5,2 MB)](https://github.com/f/family-migration-story/releases/download/v1.0.0/ornek-aile-720p.mp4).
 
 | | |
 |---|---|
