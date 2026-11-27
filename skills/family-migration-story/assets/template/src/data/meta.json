@@ -6,7 +6,11 @@
   "sources": "Kaynaklar",
   "publicDomain": "kamu malı",
   "noRestrictions": "kısıtlama yok",
-  "commons": "Wikimedia Commons"
+  "commons": "Wikimedia Commons",
+  "bordersOf": "{y} sınırları",
+  "bordersToday": "bugünkü sınırlar",
+  "familyArchive": "Aile arşivi"
  },
- "sourcesText": "Aile bilgileri: …\nTarih bilgileri: ayrıntılı rapordaki kaynaklar.\nSeslendirme: … (yerel olarak üretildi). Harita: Natural Earth (bugünkü sınırlar). Noktalı yollar temsilidir."
+ "sourcesText": "Aile bilgileri: …\nTarih bilgileri: ayrıntılı rapordaki kaynaklar.\nSeslendirme: … (yerel olarak üretildi). Harita: Natural Earth; dönem sınırları CShapes 2.0 (Schvitz vd. 2022, CC BY-NC-SA 4.0), yaklaşık. Noktalı yollar temsilidir.",
+ "vertical": false
 }

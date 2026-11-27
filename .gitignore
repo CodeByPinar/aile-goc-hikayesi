@@ -6,3 +6,6 @@ node_modules/
 *.ged
 !evals/**/*.ged
 soyagaci*.pdf
+
+# local test runs
+deneme/

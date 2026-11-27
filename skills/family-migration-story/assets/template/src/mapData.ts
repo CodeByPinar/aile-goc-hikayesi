@@ -10,13 +10,25 @@ import metaJson from "./data/meta.json";
 export type LonLat = [number, number];
 export type Branch = string; // a key of branches.json, or "all"
 
-export const GEO = geo as {
+// One map of a date (period borders): tinted state areas, the borders between them, where each family
+// place lay, and per-scene positions for the state names (labelsV: the same for the vertical video).
+export type Era = {
+  areas: { n: string; t: number; d: string }[];
+  borders: string;
+  at: Record<string, string>;
+  labels: Record<string, [string, number, number][]>;
+  labelsV?: Record<string, [string, number, number][]>;
+};
+export const GEO = geo as unknown as {
   bb: { w: number; e: number; s: number; n: number };
   S: number;
   W: number;
   H: number;
+  tall?: boolean;
   land: string;
-  borders: string;
+  borders: string; // today's borders (Natural Earth)
+  eras?: Era[];
+  sceneEra?: Record<string, { e: number; y: number; today: boolean }>;
 };
 
 const D2R = Math.PI / 180;
@@ -37,7 +49,11 @@ export const BASE = {
   halo: "#15161b",
   zone: "#e9a25a",
   river: "#6fa8dc",
+  state: "#c9c1b1", // period borders and state names
 } as const;
+
+// Six quiet tints for the states of a period map (drawn at low opacity over the land).
+export const TINTS = ["#8fa6c8", "#c8a98f", "#9fc39b", "#b9a2cc", "#c9b48a", "#8fc0bd"];
 
 // Lineage colours: readable on the dark map and distinct from each other.
 const PALETTE = ["#7fb1e6", "#e9a25a", "#78cf95", "#bb98ea", "#e58f9c", "#d9c36a", "#6fc7c2", "#b4bcc6"];
@@ -49,8 +65,11 @@ export const col = (b: Branch): string =>
 export type Meta = {
   lang: string; // BCP-47, used for upper-casing (Turkish needs "tr": i -> İ)
   title?: string;
-  ui: { route: string; sources: string; publicDomain: string; noRestrictions: string; commons: string };
+  ui: { route: string; sources: string; publicDomain: string; noRestrictions: string; commons: string; bordersOf?: string; bordersToday?: string; familyArchive?: string };
   sourcesText: string; // paragraph on the closing credits screen
+  vertical?: boolean; // also build the map tall enough for the 9:16 video
+  eras?: boolean; // period borders (default true)
+  subtitles?: boolean; // burn subtitles into the picture (default true)
 };
 export const META = metaJson as Meta;
 

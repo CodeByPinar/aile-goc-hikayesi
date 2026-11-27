@@ -6,6 +6,7 @@
 #        python3 -I places.py --qid Q1018427
 #
 # Send only the place name. Never put a person's name in a query.
+import sys as _sys; [s.reconfigure(encoding="utf-8", errors="replace") for s in (_sys.stdout, _sys.stderr) if hasattr(s, "reconfigure")]  # Windows consoles default to a legacy code page
 import json, sys, time, urllib.parse, urllib.request
 
 UA = {"User-Agent": "family-history-research/1.0 (personal, non-commercial)"}

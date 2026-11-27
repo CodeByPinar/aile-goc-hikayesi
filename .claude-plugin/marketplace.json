@@ -1,19 +1,29 @@
 {
   "name": "family-migration-story",
-  "owner": { "name": "Fatih Kadir Akın", "url": "https://github.com/f" },
+  "owner": {
+    "name": "Fatih Kadir Akın",
+    "url": "https://github.com/f"
+  },
   "metadata": {
     "description": "Soy ağacından kaynaklı aile tarihi raporu ve seslendirmeli göç haritası videosu.",
-    "version": "1.0.0"
+    "version": "1.1.0"
   },
   "plugins": [
     {
       "name": "family-migration-story",
       "source": "./",
-      "description": "Soy ağacından kaynaklı bir aile tarihi araştırması, HTML rapor ve Türkçe seslendirmeli, animasyonlu harita videosu üretir.",
-      "version": "1.0.0",
+      "description": "Soy ağacından kaynaklı bir aile tarihi araştırması, HTML rapor ve Türkçe seslendirmeli, animasyonlu harita videosu üretir; dönem sınırları, etkileşimli harita, aile belgeleri, dikey ve çok dilli video. Windows, macOS, Linux.",
+      "version": "1.1.0",
       "license": "MIT",
       "category": "productivity",
-      "keywords": ["soyağacı", "genealogy", "family-history", "e-devlet", "gedcom", "mübadele"]
+      "keywords": [
+        "soyağacı",
+        "genealogy",
+        "family-history",
+        "e-devlet",
+        "gedcom",
+        "mübadele"
+      ]
     }
   ]
 }

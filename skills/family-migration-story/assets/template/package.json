@@ -28,7 +28,10 @@
     "geo": "node scripts/build-geo.mjs",
     "check": "node scripts/check-story.mjs",
     "vo": "node scripts/gen-vo.mjs",
+    "family": "node scripts/add-family-media.mjs",
+    "srt": "node scripts/export-srt.mjs",
     "render": "remotion render FamilyStory out/master.mp4 --codec=h264 --crf=18 --log=error",
+    "render:vertical": "remotion render FamilyStoryVertical out/master-vertical.mp4 --codec=h264 --crf=18 --log=error",
     "still": "remotion still FamilyStory",
     "lint": "eslint src && tsc"
   },

@@ -1,0 +1,36 @@
+{
+ "_note": "State names for the period borders. CShapes 2.0 keeps one name for a state through all its forms; `dated` picks the name for a date ([name, valid until YYYYMMDD]), `rename` fixes spellings, and the language tables translate the result. A name missing from a language table is shown in English.",
+ "dated": {
+  "Turkey (Ottoman Empire)": [["Ottoman Empire", 19231028], ["Turkey", 99999999]],
+  "Russia (Soviet Union)": [["Russian Empire", 19171106], ["Soviet Russia", 19221229], ["Soviet Union", 19911225], ["Russia", 99999999]],
+  "Germany (Prussia)": [["German Empire", 19181108], ["Germany", 99999999]],
+  "German Federal Republic": [["West Germany", 19901002], ["Germany", 99999999]],
+  "Iran (Persia)": [["Persia", 19350320], ["Iran", 99999999]],
+  "Yugoslavia": [["Yugoslavia", 20030203], ["Serbia and Montenegro", 99999999]]
+ },
+ "rename": {
+  "Italy/Sardinia": "Italy", "Rumania": "Romania", "Macedonia (FYROM/North Macedonia)": "North Macedonia",
+  "German Democratic Republic": "East Germany", "Czech Republic": "Czechia", "Belarus (Byelorussia)": "Belarus",
+  "Bosnia": "Bosnia-Herzegovina", "Herzegovina": "Bosnia-Herzegovina", "Kyrgyz Republic": "Kyrgyzstan"
+ },
+ "tr": {
+  "Ottoman Empire": "Osmanlı Devleti", "Turkey": "Türkiye", "Greece": "Yunanistan", "Bulgaria": "Bulgaristan", "Serbia": "Sırbistan",
+  "Montenegro": "Karadağ", "Romania": "Romanya", "Albania": "Arnavutluk", "Bosnia-Herzegovina": "Bosna-Hersek", "Yugoslavia": "Yugoslavya",
+  "Serbia and Montenegro": "Sırbistan-Karadağ", "North Macedonia": "Kuzey Makedonya", "Kosovo": "Kosova", "Croatia": "Hırvatistan",
+  "Slovenia": "Slovenya", "Austria-Hungary": "Avusturya-Macaristan", "Austria": "Avusturya", "Hungary": "Macaristan",
+  "Czechoslovakia": "Çekoslovakya", "Czechia": "Çekya", "Slovakia": "Slovakya", "Poland": "Polonya",
+  "Russian Empire": "Rus İmparatorluğu", "Soviet Russia": "Sovyet Rusya", "Soviet Union": "Sovyetler Birliği", "Russia": "Rusya",
+  "Belarus": "Belarus", "Ukraine": "Ukrayna", "Moldova": "Moldova", "Georgia": "Gürcistan", "Armenia": "Ermenistan", "Azerbaijan": "Azerbaycan",
+  "Persia": "İran", "Iran": "İran", "Iraq": "Irak", "Syria": "Suriye", "Lebanon": "Lübnan", "Palestine": "Filistin", "Israel": "İsrail",
+  "West Bank": "Batı Şeria", "Gaza": "Gazze", "Jordan": "Ürdün", "Egypt": "Mısır", "Cyprus": "Kıbrıs", "Saudi Arabia": "Suudi Arabistan",
+  "Kuwait": "Kuveyt", "Libya": "Libya", "Tunisia": "Tunus", "Algeria": "Cezayir", "Morocco": "Fas", "Italy": "İtalya",
+  "German Empire": "Alman İmparatorluğu", "Germany": "Almanya", "West Germany": "Batı Almanya", "East Germany": "Doğu Almanya",
+  "France": "Fransa", "Spain": "İspanya", "Portugal": "Portekiz", "Switzerland": "İsviçre", "Belgium": "Belçika", "Netherlands": "Hollanda",
+  "Luxembourg": "Lüksemburg", "United Kingdom": "Birleşik Krallık", "Ireland": "İrlanda", "Denmark": "Danimarka", "Sweden": "İsveç",
+  "Norway": "Norveç", "Finland": "Finlandiya", "Estonia": "Estonya", "Latvia": "Letonya", "Lithuania": "Litvanya", "Malta": "Malta",
+  "Afghanistan": "Afganistan", "Kazakhstan": "Kazakistan", "Turkmenistan": "Türkmenistan", "Uzbekistan": "Özbekistan",
+  "Kyrgyzstan": "Kırgızistan", "Tajikistan": "Tacikistan", "Bokhara": "Buhara", "Khiva": "Hive", "India": "Hindistan", "China": "Çin",
+  "United States of America": "Amerika Birleşik Devletleri", "Canada": "Kanada", "Australia": "Avustralya", "Argentina": "Arjantin", "Brazil": "Brezilya"
+ },
+ "en": {}
+}

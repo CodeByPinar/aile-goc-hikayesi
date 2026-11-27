@@ -10,6 +10,7 @@
 #              or the browser; do not try to get around a site that refuses automated clients)
 #
 # Query with place + period + topic words. Never include a family member's name.
+import sys as _sys; [s.reconfigure(encoding="utf-8", errors="replace") for s in (_sys.stdout, _sys.stderr) if hasattr(s, "reconfigure")]  # Windows consoles default to a legacy code page
 import json, re, sys, time, urllib.parse, urllib.request
 
 UA = {"User-Agent": "family-history-research/1.0 (personal, non-commercial)"}

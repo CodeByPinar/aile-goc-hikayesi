@@ -6,6 +6,7 @@
 #   --oa   only results with an open-access full text
 #
 # Query with place + topic + period words, never with a family member's name.
+import sys as _sys; [s.reconfigure(encoding="utf-8", errors="replace") for s in (_sys.stdout, _sys.stderr) if hasattr(s, "reconfigure")]  # Windows consoles default to a legacy code page
 import json, os, sys, time, urllib.parse, urllib.request
 
 UA = {"User-Agent": "family-history-research/1.0 (personal, non-commercial)"}

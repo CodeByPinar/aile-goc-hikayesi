@@ -3,6 +3,7 @@
 # usage: python3 -I import_gedcom.py family.ged familytree.json [--subject @I1@]
 #
 # Only the fields the story needs are kept: names, sex, birth/death/marriage date+place, parents, notes.
+import sys as _sys; [s.reconfigure(encoding="utf-8", errors="replace") for s in (_sys.stdout, _sys.stderr) if hasattr(s, "reconfigure")]  # Windows consoles default to a legacy code page
 import json, re, sys
 from datetime import date
 

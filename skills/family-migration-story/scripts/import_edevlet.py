@@ -6,6 +6,7 @@
 # column by its horizontal centre and in a row by the nearest "Sıra" number. The "Yakınlık Derecesi"
 # chain (e.g. "Babasının Annesinin Babası") gives each person's path from the subject, which is enough
 # to rebuild the tree without guessing from names.
+import sys as _sys; [s.reconfigure(encoding="utf-8", errors="replace") for s in (_sys.stdout, _sys.stderr) if hasattr(s, "reconfigure")]  # Windows consoles default to a legacy code page
 import json, re, sys
 from datetime import date
 

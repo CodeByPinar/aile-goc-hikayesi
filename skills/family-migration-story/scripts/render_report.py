@@ -1,15 +1,21 @@
 # Render the research dossier + family tree as a self-contained HTML report (local file; it contains
 # family names, so it is not published anywhere unless the user asks).
 #
-# usage: python3 -I render_report.py familytree.json research/dossier.json report.html
+# usage: python3 -I render_report.py familytree.json research/dossier.json report.html [--video <video project>] [--media research/family-media.tsv] [--no-map]
+#   --video  use the video project's map (after `npm run geo`): period borders and the family's routes
+#   --media  the family's own photos and documents (the list `npm run family` reads): a gallery, and
+#            each one under its place in the interactive map
+#   --no-map leave out the interactive map
 #
 # Every claim is printed with its confidence and numbered citations, so a reader can tell what is
 # documented, what is probable, and what is family tradition.
-import html, json, re, sys
+import sys as _sys; [s.reconfigure(encoding="utf-8", errors="replace") for s in (_sys.stdout, _sys.stderr) if hasattr(s, "reconfigure")]  # Windows consoles default to a legacy code page
+import html, json, os, re, sys
 from collections import defaultdict
 
 sys.path.insert(0, __import__("os").path.dirname(__file__))
 from tree_tool import generations, load, name, year  # noqa: E402
+import report_map  # noqa: E402
 
 UI = {
     "tr": {"people": "Kişiler", "gen": "Kuşak", "born": "Doğum", "died": "Ölüm", "reg": "Nüfus kaydı", "places": "Yerler ve tarihleri",
@@ -17,19 +23,29 @@ UI = {
            "conf": {"documented": "belgeli", "probable": "güçlü olasılık", "tradition": "aile/yerel anlatı", "speculative": "tahmin"},
            "then": "O zaman", "now": "Bugün", "names": "Diğer adları", "family": "Ailede", "world": "Dünya", "country": "Ülke",
            "region": "Bölge", "subject": "Kendisi", "gens": {0: "Kendisi", 1: "Ebeveynler", 2: "Büyükanne/babalar", 3: "Büyük büyükler"},
-           "living": "yaşıyor", "accessed": "erişim"},
+           "living": "yaşıyor", "accessed": "erişim",
+           "atlas": "Etkileşimli harita", "atlasHint": "Yılı kaydırın ya da ▶ ile oynatın; bir yere tıklayınca o yerle ilgili bulgular açılır. Fareyle yakınlaştırıp sürükleyebilirsiniz.",
+           "play": "Oynat", "pause": "Duraklat", "reset": "Tümünü göster", "bordersOf": "{y} sınırları", "bordersToday": "bugünkü sınırlar",
+           "pick": "Haritada bir yere tıklayın: o yerin tarihi, ailede kimin orada doğduğu ve kaynaklı bulgular burada açılır.",
+           "inYear": "{y} sınırlarına göre", "place": "Yer", "noEvents": "Bu yıla kadar kayıtlı bir olay yok.", "media": "Aile arşivi",
+           "events": {"marriage": "evlilik", "divorce": "boşanma", "emig": "göç", "immi": "geliş", "resi": "ikamet"}},
     "en": {"people": "People", "gen": "Generation", "born": "Born", "died": "Died", "reg": "Civil register", "places": "Places and their history",
            "timeline": "Timeline", "sources": "Sources", "open": "Open questions", "mix": "Ancestry by origin",
            "conf": {"documented": "documented", "probable": "probable", "tradition": "family/local tradition", "speculative": "speculative"},
            "then": "Then", "now": "Now", "names": "Other names", "family": "Family", "world": "World", "country": "Country",
            "region": "Region", "subject": "Subject", "gens": {0: "Subject", 1: "Parents", 2: "Grandparents", 3: "Great-grandparents"},
-           "living": "living", "accessed": "accessed"},
+           "living": "living", "accessed": "accessed",
+           "atlas": "Interactive map", "atlasHint": "Drag the year or press ▶ to play it; click a place to open its findings. Scroll to zoom, drag to move.",
+           "play": "Play", "pause": "Pause", "reset": "Show all", "bordersOf": "borders of {y}", "bordersToday": "today's borders",
+           "pick": "Click a place on the map: its history, who in the family was born there, and the cited findings open here.",
+           "inYear": "By the borders of {y}", "place": "Place", "noEvents": "Nothing recorded up to this year.", "media": "Family archive",
+           "events": {"marriage": "marriage", "divorce": "divorce", "emig": "emigration", "immi": "arrival", "resi": "residence"}},
 }
 CONF_COL = {"documented": "#2f7d4f", "probable": "#3a6ea5", "tradition": "#a0662b", "speculative": "#8a5a9e"}
 e = lambda s: html.escape(str(s or ""))
 
 
-def main(tree_path, dossier_path, out):
+def main(tree_path, dossier_path, out, video_dir=None, media_tsv=None, with_map=True):
     t, P = load(tree_path)
     d = json.load(open(dossier_path, encoding="utf-8"))
     lang = d.get("lang", "tr")
@@ -115,6 +131,10 @@ def main(tree_path, dossier_path, out):
         note = f'<div class="note">{e(s["note"])}</div>' if s.get("note") else ""
         srcs.append(f'<li id="src-{e(sid)}"><span class="kind">{e(s.get("kind"))}</span> {". ".join(b for b in bits if b)}{meta}{acc}{note}</li>')
     oq = "".join(f"<li>{e(q)}</li>" for q in d.get("open_questions", []))
+    atlas, media = report_map.build(t, P, d, L, lang, name, year, video_dir=video_dir, media_tsv=media_tsv,
+                                    out_dir=os.path.dirname(os.path.abspath(out))) if with_map or media_tsv else ("", "")
+    if not with_map:
+        atlas = ""
 
     doc = f'''<!doctype html><html lang="{e(lang)}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>{e(d.get("title", "Family history"))}</title><style>
@@ -134,10 +154,13 @@ ul.claims,ul.tl{{padding-left:1.1em}} ul.claims li,ul.tl li{{margin:.35em 0}} .w
 .cite{{font:12px system-ui,sans-serif;vertical-align:super;text-decoration:none;margin-left:2px}} .tag{{font:11px system-ui,sans-serif;text-transform:uppercase;color:var(--muted);margin-right:6px}}
 ul.tl li.family{{font-weight:600}} ol.src{{font-size:14px;line-height:1.45}} ol.src li{{margin:.5em 0}} .kind{{font:11px system-ui,sans-serif;text-transform:uppercase;color:var(--muted)}} .note{{color:var(--muted)}}
 a{{color:#3a6ea5}} @media (max-width:600px){{td:nth-child(5){{display:none}}}}
+{report_map.ATLAS_CSS if atlas or media else ""}
 </style></head><body><main>
 <h1>{e(d.get("title", "Family history"))}</h1><p class="lede">{e(d.get("summary", ""))}</p>
 <h2>{L["mix"]}</h2><div class="mix">{bar}</div><ul class="legend">{legend}</ul>
+{atlas}
 <h2>{L["people"]}</h2><table>{"".join(rows)}</table>
+{media}
 <h2>{L["places"]}</h2>{"".join(sec)}
 <h2>{L["timeline"]}</h2><ul class="tl">{tl_html}</ul>
 {f'<h2>{L["open"]}</h2><ul>{oq}</ul>' if oq else ""}
@@ -151,4 +174,9 @@ a{{color:#3a6ea5}} @media (max-width:600px){{td:nth-child(5){{display:none}}}}
 
 
 if __name__ == "__main__":
-    main(*sys.argv[1:4])
+    a = sys.argv[1:]
+    opt = lambda k: a[a.index(k) + 1] if k in a else None
+    pos = [x for i, x in enumerate(a) if not x.startswith("--") and (i == 0 or a[i - 1] not in ("--video", "--media"))]
+    if len(pos) < 3:
+        sys.exit("usage: render_report.py familytree.json research/dossier.json report.html [--video DIR] [--media TSV] [--no-map]")
+    main(*pos[:3], video_dir=opt("--video"), media_tsv=opt("--media"), with_map="--no-map" not in a)

@@ -1,0 +1,140 @@
+{
+ "lang": "en",
+ "meta": {
+  "title": "From Salonica to Of (example)",
+  "ui": {
+   "route": "representative route",
+   "sources": "Sources",
+   "publicDomain": "public domain",
+   "noRestrictions": "no restrictions",
+   "commons": "Wikimedia Commons",
+   "bordersOf": "borders of {y}",
+   "bordersToday": "today's borders",
+   "familyArchive": "Family archive"
+  },
+  "sourcesText": "The family in this example is fictional; the history of the places is real and cited in the report.\nNarration: generated locally. Map: Natural Earth; period borders CShapes 2.0 (Schvitz et al. 2022, CC BY-NC-SA 4.0), approximate. Dotted routes are representative."
+ },
+ "labels": {
+  "Selanik": "Salonica",
+  "İzmir": "Izmir",
+  "Kadıköy": "Kadikoy",
+  "İstanbul": "Istanbul",
+  "Atina": "Athens",
+  "Çanakkale Boğazı": "Dardanelles",
+  "Karadeniz": "Black Sea",
+  "Ege Denizi": "Aegean Sea",
+  "Akdeniz": "Mediterranean",
+  "Osmanlı Devleti": "Ottoman Empire",
+  "Türkiye": "Turkey",
+  "Yunanistan": "Greece",
+  "Bulgaristan": "Bulgaria",
+  "Yugoslavya": "Yugoslavia",
+  "Sırbistan": "Serbia",
+  "Arnavutluk": "Albania",
+  "Romanya": "Romania",
+  "Rus İmparatorluğu": "Russian Empire",
+  "Sovyetler Birliği": "Soviet Union",
+  "Sovyet Rusya": "Soviet Russia",
+  "Gürcistan": "Georgia",
+  "Ermenistan": "Armenia",
+  "Kıbrıs": "Cyprus",
+  "Suriye": "Syria",
+  "Irak": "Iraq",
+  "İran": "Iran",
+  "Rusya": "Russia",
+  "Ukrayna": "Ukraine",
+  "Kuzey Makedonya": "North Macedonia",
+  "Kosova": "Kosovo",
+  "Karadağ": "Montenegro",
+  "Bosna-Hersek": "Bosnia-Herzegovina",
+  "Avusturya-Macaristan": "Austria-Hungary",
+  "Of": "Of",
+  "Trabzon": "Trabzon",
+  "Ankara": "Ankara",
+  "Samsun": "Samsun"
+ },
+ "scenes": {
+  "selanik": {
+   "part": "Father's side · Salonica",
+   "title": "A port city",
+   "cardKick": "Part I",
+   "card": "Salonica",
+   "facts": ["#Father's side", "Ali · b. 1895, Salonica", "Emine · b. 1900, Salonica"],
+   "captions": ["Salonica, 1910s"],
+   "say": [
+    "Your story begins in 1895 in Salonica, one of the busiest ports of the Ottoman Empire. Your great-grandfather Ali was born here.",
+    "At the turn of the century the city's largest community was Jewish; they shared the same bazaar with Muslims, Greeks and Bulgarians.",
+    "Five years later, in 1900, your great-grandmother Emine was born in the same city."
+   ]
+  },
+  "balkan": {
+   "part": "Father's side · Salonica",
+   "title": "The border moves",
+   "facts": ["W|8 November 1912 · Greek army enters Salonica", "W|18 August 1917 · The great fire"],
+   "captions": ["Salonica after the fire, 1917"],
+   "say": [
+    "In the autumn of 1912 the Balkan War reached the city gates. On the 8th of November the Greek army entered Salonica.",
+    "Ali was seventeen, and the city he was born in now belonged to another state.",
+    "Five years later, in August 1917, a great fire burned down the historic centre of the city."
+   ]
+  },
+  "mubadele": {
+   "part": "Father's side · Salonica",
+   "years": "1923 – 1924",
+   "title": "One steamer, one trunk",
+   "cardKick": "Part II",
+   "card": "The Exchange",
+   "facts": ["#Salonica → Izmir", "W|30 January 1923 · Exchange convention at Lausanne", "Exchanged household · 1924"],
+   "say": [
+    "Under the convention signed at Lausanne on the 30th of January 1923, the Muslims of Greece and the Greeks of Turkey were to be exchanged.",
+    "The family says that in 1924 Ali and Emine boarded a steamer with a single trunk.",
+    "They crossed the Aegean and landed in Izmir. Behind them, the city of their birth; ahead, a life they had never seen."
+   ]
+  },
+  "izmir": {
+   "part": "Father's side · Izmir",
+   "title": "A first child in a new city",
+   "facts": ["Hasan · b. 1925, Izmir", "W|21 June 1934 · Surname Law"],
+   "captions": ["Civil register · 1934 (test)"],
+   "say": [
+    "In 1925 your great-grandfather Hasan was born in Izmir, the family's first child born in this land.",
+    "With the Surname Law of 1934 the family took the name Örnek, the name you carry today."
+   ]
+  },
+  "of": {
+   "part": "Mother's side · Of",
+   "title": "Meanwhile, on the Black Sea",
+   "facts": ["#Mother's side", "Mehmet · b. 1935, Of", "Zehra · b. 1938, Of"],
+   "captions": ["Trabzon, Çömlekçi · D. Ermakov, before 1916"],
+   "say": [
+    "Meanwhile, more than a thousand kilometres to the east, in the Of district of Trabzon, your mother's father Mehmet was born.",
+    "Three years later, in 1938, your mother's mother Zehra was born in the same district."
+   ]
+  },
+  "istanbul": {
+   "part": "Istanbul",
+   "title": "Two lines meet",
+   "cardKick": "Part III",
+   "card": "Istanbul",
+   "facts": ["Murat · b. 1960, Izmir", "Ayşe · b. 1964, Of", "Marriage · 1988, Istanbul", "Deniz · b. 1992, Kadikoy"],
+   "captions": ["From the family album (test)"],
+   "say": [
+    "In 1960 your father Murat was born in Izmir, and in 1964 your mother Ayşe in Of.",
+    "The two lines met in Istanbul, and in 1988 they married.",
+    "In the spring of 1992, in Kadikoy, you were born."
+   ]
+  },
+  "hepsi": {
+   "part": "The whole family",
+   "years": "1895 – today",
+   "title": "One map, one family",
+   "say": [
+    "One side of you begins in the harbour of Salonica, the other on the slopes of Of.",
+    "Your story is where two seas and a hundred years meet."
+   ]
+  },
+  "son": {
+   "say": []
+  }
+ }
+}

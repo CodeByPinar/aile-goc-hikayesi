@@ -1,5 +1,6 @@
 # Find freely licensed images on Wikimedia Commons (prints size, license, author, date for each hit).
 # usage: python3 -I commons_search.py limit "query1" "query2" ...   (polite: pauses between requests, retries on 429)
+import sys as _sys; [s.reconfigure(encoding="utf-8", errors="replace") for s in (_sys.stdout, _sys.stderr) if hasattr(s, "reconfigure")]  # Windows consoles default to a legacy code page
 import sys, json, urllib.parse, urllib.request, urllib.error, re, html, time
 UA = {"User-Agent": "family-history-research/1.0 (personal, non-commercial)"}
 n = int(sys.argv[1]); qs = sys.argv[2:]

@@ -1,6 +1,7 @@
 # usage: python3 -I commons_fetch.py list.tsv <project>/public/img <project>/src/data/credits.json
 #   list.tsv: key<TAB>File:Title.jpg   (one image per line; keys are what story.json cues)
 # Downloads a 1800 px rendition, records author/license/page for on-screen credits, merges into credits.json.
+import sys as _sys; [s.reconfigure(encoding="utf-8", errors="replace") for s in (_sys.stdout, _sys.stderr) if hasattr(s, "reconfigure")]  # Windows consoles default to a legacy code page
 import sys, json, urllib.parse, urllib.request, urllib.error, re, html, time, os
 UA = {"User-Agent": "family-history-research/1.0 (personal, non-commercial)"}
 def strip(s):

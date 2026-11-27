@@ -9,6 +9,7 @@
 #
 # Everything here is local. The targets file lists places and years only, never names, so it is the
 # thing research queries are built from.
+import sys as _sys; [s.reconfigure(encoding="utf-8", errors="replace") for s in (_sys.stdout, _sys.stderr) if hasattr(s, "reconfigure")]  # Windows consoles default to a legacy code page
 import json, re, sys
 from collections import defaultdict
 
